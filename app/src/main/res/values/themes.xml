@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.DrushtiAI" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/drushti_navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/drushti_surface_card</item>
+        <item name="colorOnPrimaryContainer">@color/drushti_navy</item>
+
+        <item name="colorSurface">@color/drushti_surface</item>
+        <item name="colorOnSurface">@color/drushti_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/drushti_on_surface_muted</item>
+
+        <item name="colorOutline">@color/drushti_outline</item>
+        <item name="colorOutlineVariant">@color/drushti_outline</item>
+
+        <item name="android:colorBackground">@color/drushti_surface</item>
+        <item name="android:textColorPrimary">@color/drushti_on_surface</item>
+        <item name="android:textColorSecondary">@color/drushti_on_surface_muted</item>
+        <item name="android:textColorHint">@color/drushti_hint</item>
+
+        <item name="android:statusBarColor">@color/drushti_navy</item>
+        <item name="android:navigationBarColor">@color/drushti_navy</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="textInputStyle">@style/Widget.DrushtiAI.TextInputLayout</item>
+        <item name="editTextStyle">@style/Widget.DrushtiAI.TextInputEditText</item>
+
+        <item name="materialButtonStyle">@style/Widget.DrushtiAI.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.DrushtiAI.Button.Outlined</item>
+
+        <item name="toolbarStyle">@style/Widget.DrushtiAI.Toolbar</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.DrushtiAI.Toolbar</item>
+    </style>
+
+    <style name="Theme.DrushtiAI" parent="Base.Theme.DrushtiAI" />
+
+    <style name="Widget.DrushtiAI.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/drushti_navy</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.DrushtiAI.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/drushti_navy</item>
+        <item name="android:textColor">@color/drushti_navy</item>
+        <item name="iconTint">@color/drushti_navy</item>
+    </style>
+
+    <style name="Widget.DrushtiAI.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/drushti_surface</item>
+        <item name="titleTextColor">@color/drushti_navy</item>
+        <item name="subtitleTextColor">@color/drushti_on_surface_muted</item>
+        <item name="navigationIconTint">@color/drushti_navy</item>
+    </style>
+
+    <style name="ThemeOverlay.DrushtiAI.Toolbar" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="android:textColorPrimary">@color/drushti_navy</item>
+        <item name="colorControlNormal">@color/drushti_navy</item>
+    </style>
+</resources>

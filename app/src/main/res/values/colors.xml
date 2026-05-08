@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand (logo) -->
+    <color name="drushti_navy">#000F2E</color>
+    <color name="drushti_navy_light">#1A2B52</color>
+    <color name="drushti_gray">#8D9097</color>
+
+    <!-- Surfaces -->
+    <color name="drushti_surface">#FFFFFF</color>
+    <color name="drushti_surface_muted">#F4F6FA</color>
+    <color name="drushti_surface_card">#EEF1F8</color>
+
+    <!-- Text & outlines (readable on white) -->
+    <color name="drushti_on_surface">#0F1729</color>
+    <color name="drushti_on_surface_muted">#5C6578</color>
+    <color name="drushti_hint">#5C6578</color>
+    <color name="drushti_outline">#94A0B8</color>
+    <color name="drushti_outline_strong">#000F2E</color>
+
+    <!-- System / legacy -->
+    <color name="blue_text">#00BFFF</color>
+    <color name="orange_text">#FF6E1F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

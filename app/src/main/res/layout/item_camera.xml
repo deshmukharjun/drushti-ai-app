@@ -1,0 +1,105 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Camera Feed -->
+        <ImageView
+            android:id="@+id/imgMainCamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera3" />
+
+        <!-- Gradient Overlay (for text readability) -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_gradient_bottom" />
+
+        <!-- Bottom Info Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Room Label -->
+            <TextView
+                android:id="@+id/tvCameraLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Antika Medical"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <!-- Extra Controls Row -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="6dp">
+
+                <!-- Example Avatars -->
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_user1"
+                    android:background="@drawable/bg_circle"
+                    android:padding="2dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_user2"
+                    android:background="@drawable/bg_circle"
+                    android:padding="2dp"
+                    android:layout_marginStart="-8dp" />
+
+                <!-- Recording Label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Auto REC"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"/>
+
+                <!-- Counter -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1/3"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Play/Expand Button (Floating style) -->
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_play"
+            app:backgroundTint="@android:color/white"
+            app:tint="@android:color/black"
+            android:background="@drawable/bg_circle_button"/>
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

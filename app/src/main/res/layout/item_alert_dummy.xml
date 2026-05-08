@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAlertTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/drushti_navy"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="System" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnDismissAlert"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/dismiss_alert"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_close_alert"
+                app:tint="@color/drushti_on_surface_muted" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAlertBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/drushti_on_surface_muted"
+            android:textSize="14sp"
+            tools:text="Message" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

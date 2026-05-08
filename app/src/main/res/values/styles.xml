@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.DrushtiAI.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/drushti_text_input_stroke</item>
+        <item name="hintTextColor">@color/drushti_text_input_hint</item>
+        <item name="android:textColorHint">@color/drushti_hint</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="endIconTint">@color/drushti_navy</item>
+        <item name="startIconTint">@color/drushti_navy</item>
+    </style>
+
+    <style name="Widget.DrushtiAI.TextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/drushti_on_surface</item>
+        <item name="android:textColorHint">@color/drushti_hint</item>
+    </style>
+</resources>

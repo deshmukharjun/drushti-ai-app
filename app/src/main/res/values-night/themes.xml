@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Keep brand navy on system bars; slightly softer dark surfaces for night -->
+    <style name="Base.Theme.DrushtiAI" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/drushti_surface_muted</item>
+        <item name="colorOnPrimary">@color/drushti_navy</item>
+        <item name="colorPrimaryContainer">@color/drushti_navy_light</item>
+        <item name="colorOnPrimaryContainer">@color/drushti_surface_muted</item>
+
+        <item name="colorSurface">@color/drushti_navy</item>
+        <item name="colorOnSurface">@color/drushti_surface_muted</item>
+        <item name="colorOnSurfaceVariant">@color/drushti_gray</item>
+
+        <item name="colorOutline">@color/drushti_gray</item>
+        <item name="colorOutlineVariant">@color/drushti_outline</item>
+
+        <item name="android:colorBackground">@color/drushti_navy</item>
+        <item name="android:textColorPrimary">@color/drushti_surface_muted</item>
+        <item name="android:textColorSecondary">@color/drushti_gray</item>
+        <item name="android:textColorHint">@color/drushti_gray</item>
+
+        <item name="android:statusBarColor">@color/drushti_navy</item>
+        <item name="android:navigationBarColor">@color/drushti_navy</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="textInputStyle">@style/Widget.DrushtiAI.TextInputLayout.Dark</item>
+        <item name="editTextStyle">@style/Widget.DrushtiAI.TextInputEditText.Dark</item>
+
+        <item name="materialButtonStyle">@style/Widget.DrushtiAI.Button.Dark</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.DrushtiAI.Button.Outlined.Dark</item>
+
+        <item name="toolbarStyle">@style/Widget.DrushtiAI.Toolbar.Dark</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.DrushtiAI.Toolbar.Dark</item>
+    </style>
+
+    <style name="Theme.DrushtiAI" parent="Base.Theme.DrushtiAI" />
+
+    <style name="Widget.DrushtiAI.TextInputLayout.Dark" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/drushti_text_input_stroke_dark</item>
+        <item name="hintTextColor">@color/drushti_text_input_hint_dark</item>
+        <item name="android:textColorHint">@color/drushti_gray</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="endIconTint">@color/drushti_surface_muted</item>
+    </style>
+
+    <style name="Widget.DrushtiAI.TextInputEditText.Dark" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/drushti_surface_muted</item>
+        <item name="android:textColorHint">@color/drushti_gray</item>
+    </style>
+
+    <style name="Widget.DrushtiAI.Button.Dark" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/drushti_surface_muted</item>
+        <item name="android:textColor">@color/drushti_navy</item>
+    </style>
+
+    <style name="Widget.DrushtiAI.Button.Outlined.Dark" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/drushti_surface_muted</item>
+        <item name="android:textColor">@color/drushti_surface_muted</item>
+        <item name="iconTint">@color/drushti_surface_muted</item>
+    </style>
+
+    <style name="Widget.DrushtiAI.Toolbar.Dark" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/drushti_navy</item>
+        <item name="titleTextColor">@color/drushti_surface_muted</item>
+        <item name="subtitleTextColor">@color/drushti_gray</item>
+        <item name="navigationIconTint">@color/drushti_surface_muted</item>
+    </style>
+
+    <style name="ThemeOverlay.DrushtiAI.Toolbar.Dark" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="android:textColorPrimary">@color/drushti_surface_muted</item>
+        <item name="colorControlNormal">@color/drushti_surface_muted</item>
+    </style>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivSnapshot"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/drushti_surface_muted"
+            android:contentDescription="@string/threat_snapshot"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/place_holder" />
+
+        <TextView
+            android:id="@+id/tvSnapshotLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/drushti_on_surface"
+            android:textSize="12sp"
+            tools:text="Seat A3" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
