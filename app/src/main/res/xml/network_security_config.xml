@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow plain HTTP only for the local FastAPI backend.
+         Supabase and other internet traffic still uses HTTPS by default. -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Your laptop's LAN IP (from `ipconfig` → Wireless LAN adapter Wi-Fi).
+             Update this if your router hands out a different IP next time. -->
+        <domain includeSubdomains="true">192.168.1.35</domain>
+
+        <!-- Android emulator's special alias for the host machine's localhost.
+             Keep this so the same APK works in the emulator too. -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>

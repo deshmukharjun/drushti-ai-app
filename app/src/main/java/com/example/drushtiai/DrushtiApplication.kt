@@ -21,5 +21,6 @@ class DrushtiApplication : Application() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         SupabaseHelper.init()
         GuestSession.init(this)
+        NotificationHelper.ensureChannel(this)
     }
 }

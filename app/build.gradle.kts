@@ -29,8 +29,20 @@ android {
 
         val supabaseUrl = localProperties.getProperty("supabase.url", "https://YOUR_PROJECT.supabase.co")
         val supabaseKey = localProperties.getProperty("supabase.anon.key", "YOUR_ANON_KEY")
+        // Backend (FastAPI) base URL. Set in local.properties:
+        //   backend.url=http://192.168.1.10:8000
+        // Use the LAN IP of the machine running the backend (NOT 127.0.0.1, since
+        // Android sees its own loopback). For Android emulator on the same machine
+        // use http://10.0.2.2:8000.
+        val backendUrl = localProperties.getProperty("backend.url", "http://10.0.2.2:8000")
+        // Optional default camera source registered on the backend if no camera
+        // exists yet. "0" = first webcam on the backend host. Replace with an
+        // RTSP URL like rtsp://user:pass@cam-host:554/stream for an IP camera.
+        val backendCameraSource = localProperties.getProperty("backend.camera.source", "0")
         buildConfigField("String", "SUPABASE_URL", "\"${supabaseUrl.replace("\"", "\\\"")}\"")
         buildConfigField("String", "SUPABASE_ANON_KEY", "\"${supabaseKey.replace("\"", "\\\"")}\"")
+        buildConfigField("String", "BACKEND_URL", "\"${backendUrl.replace("\"", "\\\"")}\"")
+        buildConfigField("String", "BACKEND_CAMERA_SOURCE", "\"${backendCameraSource.replace("\"", "\\\"")}\"")
     }
 
     buildTypes {
@@ -68,6 +80,8 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.ktor.client.android)
+    implementation(libs.ktor.client.content.negotiation)
+    implementation(libs.ktor.serialization.kotlinx.json)
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.coordinatorlayout)
